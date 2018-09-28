@@ -15,7 +15,7 @@ npm install -g kt-cli
 ```
 kt-cli create hello-kt  创建项目文件夹
 
-npm install 安转项目依赖
+npm install 安装项目依赖
 
 npm run dev 运行项目
 
