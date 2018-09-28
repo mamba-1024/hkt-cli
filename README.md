@@ -1,6 +1,6 @@
 构建一个自己的cli玩玩，方便React项目开发。
 
-kt-cli就是一个React项目的(脚手架)[https://github.com/huangketong/umi-react-admin.git]
+kt-cli就是一个React项目的[脚手架](https://github.com/huangketong/umi-react-admin.git)
 
 ### 全局安装cli工具
 
