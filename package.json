@@ -1,6 +1,6 @@
 {
   "name": "kt-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "我自己的cli工具",
   "scripts": {
     "test": "mocha ./test/test.js"
