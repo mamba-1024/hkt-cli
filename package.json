@@ -1,0 +1,27 @@
+{
+  "name": "kt-cli",
+  "version": "1.0.0",
+  "description": "我自己的cli工具",
+  "scripts": {
+    "test": "mocha ./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huangketong/kt-cli"
+  },
+  "author": "huangketong",
+  "license": "ISC",
+  "bin": {
+    "kt-cli": "./bin/kt-cli.js"
+  },
+  "dependencies": {
+    "commander": "^2.18.0",
+    "git-clone": "^0.1.0",
+    "shelljs": "^0.8.2",
+    "tracer": "^0.9.1"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "mocha": "^5.2.0"
+  }
+}
