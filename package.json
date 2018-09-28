@@ -10,7 +10,7 @@
     "url": "https://github.com/huangketong/kt-cli"
   },
   "author": "huangketong",
-  "license": "ISC",
+  "license": "MIT",
   "bin": {
     "kt-cli": "./bin/kt-cli.js"
   },
