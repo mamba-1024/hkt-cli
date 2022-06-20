@@ -2,7 +2,7 @@ import { Command } from 'commander'
 import fse from 'fs-extra'
 import pathUtil from 'path'
 import initEslint from './command/init-js-eslint';
-import install from './command/install-dep';
+import installEslint from './command/install-dep';
 
 main();
 
@@ -21,9 +21,9 @@ function main() {
   .action(initEslint);
 
   program
-    .command('install')
+    .command('install-eslint')
     .description('安装eslint相关依赖')
-    .action(install);
+    .action(installEslint);
 
   program.parse();
 }

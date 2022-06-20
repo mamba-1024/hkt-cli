@@ -1,22 +1,28 @@
-构建一个自己的cli玩玩，方便React项目开发。
+构建一个自己的 cli 工具
 
-kt-cli就是一个React项目的[脚手架](https://github.com/huangketong/umi-react-admin.git)
-
-### 全局安装cli工具
+## 全局安装cli工具
 
 ```
-npm install -g kt-cli
+npm install -g hkt-cli
 
 ```
 
-#### 使用cli构建自己的项目基础框架
+## 使用说明
 
-举个栗子：在自己的目标目录中创建名为hello-kt的基础项目
-```
-kt-cli create hello-kt  创建项目文件夹
+### 配置专属的 eslint 规则
 
-npm install 安装项目依赖
+> 会自动在根目录生成 `.eslintrc.js`、`.eslintignore` 和 `.prettierrc.js` 文件
 
-npm run dev 运行项目
+1. 初始化 eslint 规则
 
 ```
+hkt-cli init-eslint
+```
+2. 安装响应的 eslint 依赖
+
+```
+hkt-cli install-eslint
+```
+### 后续更新
+
+- 生成项目脚手架
