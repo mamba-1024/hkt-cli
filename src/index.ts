@@ -21,16 +21,16 @@ function main() {
   .description('初始化项目 eslint')
   .action(initEslint);
 
-  // program.command('init-prettierrc')
-  // .description('初始化项目 prettierrc')
-  // .action(initEslint);
+  program.command('init-prettierrc')
+  .description('初始化项目 prettierrc')
+  .action(initPrettierrc);
 
-  // program
-  //   .command('install-eslint')
-  //   .description('安装eslint相关依赖')
-  //   .action(installEslint);
+  program
+    .command('install-eslint')
+    .description('安装eslint相关依赖')
+    .action(installEslint);
 
-  // program.parse();
+  program.parse();
 }
 
 function loadPackageInfo() {
