@@ -1,6 +1,16 @@
 #!/usr/bin/env node
 
 console.log("Hello KT-CLI");
+// const path = require('path');
+// const name = '.eslintrc.js'
+// const appRoot = path.join(process.cwd());
+//   // 获取配置文件
+//   const toName = path.join(appRoot, name);
+//   // 获取源文件
+//   const fromPath = path.join(__dirname, `../../template/${name}`);
+//   console.log(appRoot)
+//   console.log(toName)
+//   console.log(fromPath)
 require('../lib/index.js');
 
 // const program = require("commander");
