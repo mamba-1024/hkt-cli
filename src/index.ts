@@ -3,6 +3,7 @@ import fse from 'fs-extra'
 import pathUtil from 'path'
 import initEslint from './command/init-js-eslint';
 import installEslint from './command/install-dep';
+import initPrettierrc from './command/init-prettier';
 
 main();
 
@@ -17,7 +18,11 @@ function main() {
     .version(pkg.version);
 
   program.command('init-eslint')
-  .description('初始化项目')
+  .description('初始化项目 eslint')
+  .action(initEslint);
+
+  program.command('init-prettierrc')
+  .description('初始化项目 prettierrc')
   .action(initEslint);
 
   program
