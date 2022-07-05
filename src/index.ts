@@ -4,6 +4,8 @@ import pathUtil from 'path'
 import initEslint from './command/init-js-eslint';
 import installEslint from './command/install-dep';
 import initPrettierrc from './command/init-prettier';
+import initStylelint from './command/init-stylelint';
+import installStylelint from './command/install-stylelint-dep';
 
 main();
 
@@ -18,17 +20,27 @@ function main() {
     .version(pkg.version);
 
   program.command('init-eslint')
-  .description('初始化项目 eslint')
-  .action(initEslint);
+    .description('初始化项目 eslint')
+    .action(initEslint);
 
   program.command('init-prettierrc')
-  .description('初始化项目 prettierrc')
-  .action(initPrettierrc);
+    .description('初始化项目 prettierrc')
+    .action(initPrettierrc);
 
   program
     .command('install-eslint')
     .description('安装eslint相关依赖')
     .action(installEslint);
+
+  program
+    .command('install-stylelint')
+    .description('初始化项目 stylelint')
+    .action(initStylelint);
+
+  program
+    .command('install-stylelint')
+    .description('安装stylelint相关依赖')
+    .action(installStylelint);
 
   program.parse();
 }
