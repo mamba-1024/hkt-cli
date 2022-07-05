@@ -33,7 +33,7 @@ function main() {
     .action(installEslint);
 
   program
-    .command('install-stylelint')
+    .command('init-stylelint')
     .description('初始化项目 stylelint')
     .action(initStylelint);
 
