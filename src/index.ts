@@ -6,6 +6,8 @@ import installEslint from './command/install-dep';
 import initPrettierrc from './command/init-prettier';
 import initStylelint from './command/init-stylelint';
 import installStylelint from './command/install-stylelint-dep';
+import initCommitlint from './command/init-commitlint';
+import installCommitlint from './command/install-commitlint-dep';
 
 main();
 
@@ -41,6 +43,16 @@ function main() {
     .command('install-stylelint')
     .description('安装stylelint相关依赖')
     .action(installStylelint);
+
+    program
+    .command('init-commitlint')
+    .description('初始化项目 commitlint')
+    .action(initCommitlint);
+
+  program
+    .command('install-commitlint')
+    .description('安装commitlint相关依赖')
+    .action(installCommitlint);
 
   program.parse();
 }
