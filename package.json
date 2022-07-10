@@ -1,6 +1,6 @@
 {
   "name": "hkt-cli",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "我自己的cli工具",
   "scripts": {
     "lint": "eslint src --ext .ts",
