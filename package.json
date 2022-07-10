@@ -1,12 +1,11 @@
 {
   "name": "hkt-cli",
-  "version": "0.0.15",
+  "version": "0.0.17",
   "description": "我自己的cli工具",
   "scripts": {
     "lint": "eslint src --ext .ts",
     "watch": "tsc --watch --rootDir src --outDir lib",
-    "build": "tsc --rootDir src --outDir lib",
-    "test": "mocha ./test/test.js"
+    "build": "tsc --rootDir src --outDir lib"
   },
   "repository": {
     "type": "git",
@@ -17,6 +16,12 @@
   "bin": {
     "hkt-cli": "bin/hkt-cli.js"
   },
+  "files": [
+    "lib/",
+    "bin/",
+    "node_modules/",
+    "template/"
+  ],
   "lint-staged": {
     "*.ts": "eslint"
   },
@@ -49,10 +54,12 @@
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "mocha": "^5.2.0",
     "pre-commit": "^1.2.2",
+    "prettier": "^2.7.1",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.3"
   }
