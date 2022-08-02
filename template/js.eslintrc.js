@@ -4,15 +4,20 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ['airbnb-base', 'airbnb-typescript', 'prettier'],
+  extends: ['airbnb-base', 'airbnb-typescript', 'airbnb', 'plugin:prettier/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
     project: './tsconfig.json',
   },
-  plugins: ['@typescript-eslint', 'prettier'],
+  plugins: ['@typescript-eslint', 'import'],
   rules: {
+    'import/no-unresolved': 0,
+    'import/extensions': 0,
+    'import/no-cycle': 0,
+    'import/prefer-default-export': 0,
+    'import/no-extraneous-dependencies': 0,
     // 使用 2 个空格缩进
     indent: ['error', 2],
     // 使用分号
@@ -77,5 +82,7 @@ module.exports = {
     quotes: ['error', 'single'],
     // 禁止不必要的转义字符
     'no-useless-escape': 'error',
+    // 箭头函数
+    'arrow-parens': [2, 'as-needed', { requireForBlockBody: true }],
   },
 };
