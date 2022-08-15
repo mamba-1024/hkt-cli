@@ -82,7 +82,7 @@ module.exports = {
     // 声明的变量必须被使用
     'no-unused-vars': 'error',
     // 不要在声明前就使用变量
-    'no-use-before-define': ['error', { functions: false }],
+    'no-use-before-define': ['error', { 'functions': false }],
     // 变量不要与外层作用域已存在的变量同名
     'no-shadow': 'error',
     // 不要重复声明变量和函数
