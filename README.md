@@ -13,17 +13,38 @@ npm install -g hkt-cli
 
 > 会自动在根目录生成 `.eslintrc.js`、`.eslintignore` 和 `.prettierrc.js` 文件
 
-- eslint
-  1. 初始化 eslint 规则
+- eslint for javascript
+  1. 初始化 JS 项目 eslint 规则
 
   ```
-  hkt-cli init-eslint
+  hkt-cli init-eslint-js
   ```
-  2. 安装的 eslint 依赖
+  2. 安装 JS 项目 eslint 相关依赖
 
   ```
-  hkt-cli install-eslint
+  hkt-cli install-eslint-js
   ```
+- eslint for typescript
+  1. 初始化 TS 项目 eslint 规则
+
+  ```
+  hkt-cli init-eslint-ts
+  ```
+  2. 安装 TS 项目 eslint 相关依赖
+  ```
+  hkt-cli install-eslint-ts
+  ```
+- eslint for React + Typescript
+
+  1. 初始化 React + TS 项目 eslint 规则
+  ```
+  hkt-cli init-eslint-react
+  ```
+  2. 安装 React + TS 项目 eslint 相关依赖
+  ```
+  hkt-cli install-eslint-react
+  ```
+
 - stylelint
   1. 初始化 stylelint
 

@@ -1,11 +1,12 @@
 {
   "name": "hkt-cli",
-  "version": "0.0.23",
+  "version": "0.0.25",
   "description": "我自己的cli工具，自动生成项目的 eslint、stylelint、commitlint规则和配置文件",
   "scripts": {
     "lint": "eslint src --ext .ts",
     "watch": "tsc --watch --rootDir src --outDir lib",
-    "build": "tsc --rootDir src --outDir lib"
+    "build": "tsc --rootDir src --outDir lib",
+    "release": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
@@ -47,13 +48,12 @@
     "@hkt/eslint-rules": "^0.0.9",
     "@hkt/prettier-rules": "^0.0.2",
     "@types/node": "^18.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.28.0",
-    "@typescript-eslint/parser": "^5.28.0",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
     "assert": "^1.4.1",
     "eslint": "^8.17.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.4.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.1",
