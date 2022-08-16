@@ -2,7 +2,7 @@ import shell from 'shelljs';
 
 export default function () {
   const installTip =
-    'npm install --save-dev eslint typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-airbnb eslint-config-airbnb-base eslint-config-airbnb-typescript eslint-config-prettier prettier eslint-plugin-prettier eslint-plugin-import';
+    'npm i -D @hkt/eslint-rules @babel/core @babel/eslint-parser eslint-plugin-import';
   console.log('开始执行 npm install ... 🚀🚀🚀🚀🚀🚀');
   shell.echo(installTip);
   console.log('🚀🚀🚀🚀🚀🚀 install 开始，请稍后..');

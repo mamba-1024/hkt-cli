@@ -1,6 +1,6 @@
 {
   "name": "hkt-cli",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "我自己的cli工具，自动生成项目的 eslint、stylelint、commitlint规则和配置文件",
   "scripts": {
     "lint": "eslint src --ext .ts",
@@ -44,7 +44,8 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
-    "@hkt/prettier-rules": "0.0.2",
+    "@hkt/eslint-rules": "^0.0.9",
+    "@hkt/prettier-rules": "^0.0.2",
     "@types/node": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
