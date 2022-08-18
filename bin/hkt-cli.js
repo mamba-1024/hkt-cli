@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-console.log("Hello KT-CLI");
+console.log('Hello KT-CLI');
 // const path = require('path');
 // const name = '.eslintrc.js'
 // const appRoot = path.join(process.cwd());

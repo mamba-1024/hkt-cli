@@ -9,6 +9,12 @@ npm install -g hkt-cli
 
 ## 使用说明
 
+### 检测 hkt-cli 的版本是否最新的
+
+```
+hkt-cli
+```
+
 ### 配置专属的 eslint 规则
 
 > 会自动在根目录生成 `.eslintrc.js`、`.eslintignore` 和 `.prettierrc.js` 文件

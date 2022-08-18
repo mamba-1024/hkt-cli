@@ -1,6 +1,6 @@
 {
   "name": "hkt-cli",
-  "version": "0.0.26",
+  "version": "0.0.30",
   "description": "我自己的cli工具，自动生成项目的 eslint、stylelint、commitlint规则和配置文件",
   "scripts": {
     "lint": "eslint src --ext .ts",
@@ -34,11 +34,12 @@
   },
   "dependencies": {
     "@types/commander": "^2.12.2",
-    "chalk": "^5.0.1",
+    "chalk": "^4.1.2",
     "commander": "^9.3.0",
     "fs-extra": "^10.1.0",
     "git-clone": "^0.1.0",
     "lodash": "^4.17.21",
+    "semver": "^7.3.7",
     "shelljs": "^0.8.2",
     "tracer": "^0.9.1"
   },
