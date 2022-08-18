@@ -2,7 +2,7 @@ import shell from 'shelljs';
 
 export default function () {
   const installTip =
-    'npm i -D @hkt/eslint-rules @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript eslint-plugin-react eslint-plugin-react-hooks';
+    'npm i -D @hkt/eslint-rules @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y';
   console.log('开始执行 npm install ... 🚀🚀🚀🚀🚀🚀');
   shell.echo(installTip);
   console.log('🚀🚀🚀🚀🚀🚀 install 开始，请稍后..');
