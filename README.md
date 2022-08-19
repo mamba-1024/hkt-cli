@@ -15,6 +15,26 @@ npm install -g hkt-cli
 hkt-cli
 ```
 
+### 查看 hkt-cli 命令行说明
+```
+hkt-cli -h
+
+init-eslint-js           初始化 JS 项目 eslint
+install-eslint-js        安装 JS 项目 eslint 相关依赖
+init-prettierrc          初始化项目 prettierrc
+init-stylelint           初始化项目 stylelint
+init-eslint-ts           初始化 TS 项目 eslint
+install-eslint-ts        安装 TS 项目 eslint 相关依赖
+init-eslint-react-ts     初始化 typescript react 项目 eslint
+install-eslint-react-ts  安装 typescript react 项目的 eslint 相关依赖
+init-eslint-react-js     初始化 javascript react 项目 eslint
+install-eslint-react-js  安装 javascript react 项目的 eslint 相关依赖
+install-stylelint        安装stylelint相关依赖
+init-commitlint          初始化项目 commitlint
+install-commitlint       安装commitlint相关依赖
+```
+
+
 ### 配置专属的 eslint 规则
 
 > 会自动在根目录生成 `.eslintrc.js`、`.eslintignore` 和 `.prettierrc.js` 文件
@@ -44,11 +64,22 @@ hkt-cli
 
   1. 初始化 React + TS 项目 eslint 规则
   ```
-  hkt-cli init-eslint-react
+  hkt-cli init-eslint-react-ts
   ```
   2. 安装 React + TS 项目 eslint 相关依赖
   ```
-  hkt-cli install-eslint-react
+  hkt-cli install-eslint-react-ts
+  ```
+
+- eslint for React + javascript
+
+  1. 初始化 React + JS 项目 eslint 规则
+  ```
+  hkt-cli init-eslint-react-js
+  ```
+  2. 安装 React + JS 项目 eslint 相关依赖
+  ```
+  hkt-cli install-eslint-react-js
   ```
 
 - stylelint
