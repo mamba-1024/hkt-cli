@@ -83,48 +83,62 @@ install-commitlint       安装commitlint相关依赖
   ```
 
 - stylelint
-  1. 初始化 stylelint
+  1. 初始化 `stylelint`
 
 ```
 hkt-cli init-stylelint
 ```
-  2. 安装 stylelint 依赖
+  2. 安装 `stylelint` 依赖
 
 ```
 hkt-cli install-stylelint
 ```
 
 - prettier
-  1. 配置 prettier，配合 esllint 使用
+  1. 配置 `prettier`，配合 `esllint` 使用
 
 ```
 hkt-cli init-prettier
 ```
 
 - commitlint
-  1. 初始化 commitlint
+  1. 初始化 `commitlint`
 
 ```
 hkt-cli init-commitlint
 ```
-  2. 安装 commitlint 依赖， 其中已经包含 `husky` 、 `lint-staged` 和 `pre-commit`
+  2. 安装 `commitlint` 依赖， 其中已经包含 `husky` 、 `lint-staged`
+
+> 在安装 `husky` 依赖前，请在 `package.json` 的 `script` 中新增 `"prepare": "husky install"`，这样在安装 `husky` 后会自动启动 `Git hooks` 功能，相当于手动执行 `npx husky install`。
 
 ```
 hkt-cli install-commitlint
 ```
-  3. 手动在项目的 `package.json` 中配置 commitlint 的 husky，lint-staged 和 pre-commit
+  3. 手动在项目的 `package.json` 中配置 `commitlint` 的 `lint-staged`
 
 ```
+// 具体 lint-staged 要执行什么操作，根据自己的项目而定，下面只是一个实例
 "lint-staged": {
-  "*.{js,ts,tsx,jsx}": "eslint",
-  "*.{css,less,scss}": "stylelint"
-},
-"husky": {
-  "hooks": {
-    "pre-commit": "lint-staged",
-    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    "./src/**/*.{js,ts,tsx,jsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "./src/**/*.{css,less,scss}": [
+      "stylelint --syntax less --fix",
+      "git add"
+    ]
   }
-}
+```
+  4. 配置 `husky` 的 `commitlint` 和 `pre-commit`
+
+```
+// 自动生成 .husky/commit-msg，执行 commitlint
+npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
+
+// 自动生成 .husky/pre-commit 执行 lint-staged
+npx husky add .husky/pre-commit "npx lint-staged"
+
 ```
 
 ### 后续更新
