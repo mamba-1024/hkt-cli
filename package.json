@@ -3,6 +3,7 @@
   "version": "0.0.31",
   "description": "我自己的cli工具，自动生成项目的 eslint、stylelint、commitlint规则和配置文件",
   "scripts": {
+    "prepare": "husky install",
     "lint": "eslint src --ext .ts",
     "watch": "tsc --watch --rootDir src --outDir lib",
     "build": "tsc --rootDir src --outDir lib",
@@ -24,13 +25,11 @@
     "template/"
   ],
   "lint-staged": {
-    "*.ts": "eslint"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+    "./src/**/*.ts": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
   },
   "dependencies": {
     "@types/commander": "^2.12.2",
@@ -60,7 +59,6 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "mocha": "^5.2.0",
-    "pre-commit": "^1.2.2",
     "prettier": "^2.7.1",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.3"
