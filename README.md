@@ -1,5 +1,8 @@
 构建一个自己的 cli 工具
 
+
+[![OSCS Status](https://www.oscs1024.com/platform/badge/mamba-1024/first-rule.svg?size=small)](https://www.oscs1024.com/project/mamba-1024/first-rule?ref=badge_small)
+
 ## 全局安装cli工具
 
 ```
@@ -141,6 +144,18 @@ npx husky add .husky/pre-commit "npx lint-staged"
 
 ```
 
-### 后续更新
+### 项目脚手架
 
-- 生成项目脚手架
+- 可以直接 `clone` 项目 [react-admin](https://github.com/mamba-1024/react-admin-vite)
+
+```
+git clone https://github.com/mamba-1024/react-admin-vite.git
+
+cd react-admin-vite
+
+// 安装依赖
+npm install
+
+// 本地查看效果
+npm run dev 
+```
